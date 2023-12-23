@@ -1,0 +1,42 @@
+.app-sidebar {
+    display: none;
+    width: 200px;
+    background-color: #e0e0e0;
+}
+
+.app-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.app-sidebar ul > * {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+}
+
+.app-sidebar li:hover {
+    background-color: white;
+}
+
+#sidebar-logo {
+    flex: 0 0 20px;
+}
+@media (min-width: 768px) {
+    .app-sidebar {
+         display: block;
+         padding: 1em;
+    }
+ 
+    .app-sidebar ul {
+         display: flex;
+         flex-direction: column;
+         gap: 1em;
+    }
+ }
+ 
+
+ #sidebar-logo img {
+    width: 100%;
+ }
+
